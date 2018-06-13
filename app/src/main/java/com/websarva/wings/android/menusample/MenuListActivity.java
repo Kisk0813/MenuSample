@@ -1,4 +1,4 @@
-package jp.hotmix.menusample;
+package com.websarva.wings.android.menusample;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -39,12 +39,12 @@ public class MenuListActivity extends AppCompatActivity {
         _lvMenu.setAdapter(adapter);
         _lvMenu.setOnItemClickListener(new ListItemClickListener());
     }
-
+                                                                                        a
     private class ListItemClickListener implements AdapterView.OnItemClickListener {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Map<String, Object> item = (Map<String, Object>)parent.getItemAtPosition(position);
+            Map<String, Object> item = (Map<String, Object>)parenat.getItemAtPosition(position);
 
             String menuName = (String) item.get("name");
             Integer menuPrice = (Integer) item.get("price");
