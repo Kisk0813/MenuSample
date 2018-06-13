@@ -93,6 +93,13 @@ public class MenuListActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            MenuInFlater inflater = getMenuInflater();
+            inflater.inflate(R.menu_options_menu_list,menu);
+            return super.onCreateOptionsMenu(menu);
+        }
+
     }
 
 }
